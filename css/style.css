@@ -50,8 +50,11 @@ body {
     margin-right: 28px;
     cursor: pointer;
 }
-.menu-button:hover .menu-line{
+.menu-button:hover .menu-line {
     background-color: #ff0000;
+}
+.menu-button:hover {
+    fill: #ff0000;
 }
 .menu-line {
     display: block;
