@@ -1,3 +1,4 @@
+/* Общие стили */
 @font-face {
     font-family: Mulish;
     font-style: normal;
@@ -17,6 +18,10 @@
 * {
     box-sizing: border-box;
 }
+*:focus {
+    outline: 2px dotted #898989;
+    outline-offset: 2px;
+}
 body {
     font-family: 'Mulish', sans-serif; 
     font-style: normal;
@@ -25,11 +30,13 @@ body {
     line-height: 20px;
 }
 
+/* Шапка */
 .header {
     padding: 20px 70px 20px 32px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    min-width: 1024px;
 }
 .menu-button {
     padding: 0;
@@ -43,6 +50,9 @@ body {
     margin-right: 28px;
     cursor: pointer;
 }
+.menu-button:hover .menu-line{
+    background-color: #ff0000;
+}
 .menu-line {
     display: block;
     background-color: #1F2022;
@@ -51,6 +61,7 @@ body {
     border-radius: 20px;
 }
 .logo {
+    display: block;
     margin-right: 59px;
 }
 .input-group {
@@ -62,13 +73,14 @@ body {
     align-items: center;
     padding-right: 17px;
     max-width: 830px;
-    width: 50%;
+    width: 43.23%;
 }
 .input-search {
     background: transparent;
     border: none;
     padding: 12px 23px 12px 23px;
     width: 100%;
+    outline: none;
 }
 .button-search {
     width: 19px;
@@ -104,11 +116,12 @@ body {
     border-radius: 50%;
 }
 
+/* Блок с навигацией */
 .sidebar {
-    padding-left: 32px;
+    padding-left: 31px;
 }
 .nav-menu {
-    margin: 0 0 60px 0;
+    margin-bottom: 60px;
     padding: 0;
     list-style-type: none;
 }
@@ -124,6 +137,14 @@ body {
 .nav-link:hover {
     color: #FF0000;
 }
+.icon-container {
+    width: 22px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .nav-link:hover .icon {
     fill: #FF0000;
 }
@@ -131,17 +152,41 @@ body {
     fill: #898989;
 }
 .nav-text {
-    margin-left: 13px;
+    margin-left: 12px;
 }
-.nav-image {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-}
-.nav-title {
+
+.subs-title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+.subs-menu {
+    padding: 0;
+    list-style-type: none;
+}
+.subs-item {
+    margin-bottom: 23px;
+}
+.subs-link {
+    display: flex;
+    align-items: center;
+    color: #898989;
+    text-decoration: none;
+}
+.subs-link:hover {
+    color: #FF0000;
+}
+.subs-image {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.subs-link:hover .subs-image {
+    border: 2px solid #FF0000;
+}
+.subs-text {
+    margin-left: 12px;
 }
