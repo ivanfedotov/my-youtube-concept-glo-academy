@@ -37,6 +37,10 @@ body {
     display: flex;
     align-items: center;
     min-width: 1024px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .menu-button {
     padding: 0;
@@ -122,6 +126,12 @@ body {
 /* Блок с навигацией */
 .sidebar {
     padding-left: 31px;
+    position: fixed;
+    top: 114px;
+    height: calc( 100% - 114px) ;
+    overflow-y: auto;
+    width: 255px;
+    background-color: #fff;
 }
 .nav-menu {
     margin-bottom: 60px;
