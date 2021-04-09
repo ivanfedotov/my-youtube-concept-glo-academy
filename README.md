@@ -1,8 +1,7 @@
 # Проект «Youtube Concept»
 Учебный проект от "GLO Academy" в рамках интесива по верстке
 ## Используемые технологии
-- HTML
-- CSS
-- Normalize.css
+- HTML (Adaptive Design)
+- CSS, Normalize.css
+- JS, Swiper.js
 - SVG sprites
-- Swiper.js
