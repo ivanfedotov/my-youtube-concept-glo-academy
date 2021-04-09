@@ -1,8 +1,25 @@
 const swiper1 = new Swiper('.channel-slider', {
     // Optional parameters
     loop: true,
-    slidesPerView: 6,
-  
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      1900: {
+        slidesPerView: 6,
+      },
+      1600: {
+        slidesPerView: 5,
+      },
+      1300: {
+        slidesPerView: 4,
+      },
+      1100: {
+        slidesPerView: 3,
+      },
+      1800: {
+        slidesPerView: 2,
+      }
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.channel-button-next',
@@ -14,8 +31,17 @@ const swiper1 = new Swiper('.channel-slider', {
   const swiper2 = new Swiper('.slider-2', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
-  
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      1600: {
+        slidesPerView: 3,
+      },
+      1100: {
+        slidesPerView: 2,
+      },
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: '.slider-2-next',
@@ -27,8 +53,25 @@ const swiper1 = new Swiper('.channel-slider', {
   const swiper3 = new Swiper('.slider-3', {
     // Optional parameters
     loop: true,
-    slidesPerView: 6,
-  
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      1900: {
+        slidesPerView: 6,
+      },
+      1600: {
+        slidesPerView: 5,
+      },
+      1300: {
+        slidesPerView: 4,
+      },
+      1100: {
+        slidesPerView: 3,
+      },
+      1800: {
+        slidesPerView: 2,
+      }
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.slider-3-next',
