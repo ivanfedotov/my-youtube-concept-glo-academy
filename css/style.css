@@ -238,12 +238,14 @@ body {
     margin-top: 85px;
     padding-left: 255px;
     padding-top: 29px;
+    padding-right: 32px;
 }
 
 /* Слайдер 1 */
 .channel {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 30px;
     align-items: center;
 }
@@ -396,8 +398,19 @@ body {
 }
 
 /* Адаптивность */
+.mobile-search {
+    display: none;
+}
 .mobile-sidebar {
     display: none;
+}
+@media (max-width: 1400px) {
+    .slider-buttons {
+        right: 10px;
+    }
+    .btn-subscribe {
+        right: 100px;
+    }
 }
 @media (max-width: 1024px) {
     .icons {
@@ -406,10 +419,42 @@ body {
     .user {
         margin-left: auto;
     }
+    .channel-text-additional {
+        display: none;
+    }
+    .slider-buttons {
+        right: 10px;
+    }
+    .btn-subscribe {
+        right: 100px;
+    }
 }
 @media (max-width: 720px) {
+    .header {
+        padding-right: 32px;
+    }
     .menu-button {
         display: none;
+    }
+    .mobile-search {
+        display: block;
+        margin-left: auto;
+    }
+    .input-group {
+        position: fixed;
+        top: -100px;
+        left: 0;
+        margin-left: 25px;
+        width: calc( 100% - 25px - 32px - 50px + 1px);
+        opacity: 0;
+        transition: top 0.2s;
+    }
+    .input-group.is-open {
+        top: 18px;
+        opacity: 1;
+    }
+    .user {
+        margin-left: 20px;
     }
     .sidebar {
         display: none;
@@ -420,7 +465,7 @@ body {
     .mobile-sidebar {
         display: block;
         position: fixed;
-        z-index: 99px;
+        z-index: 99;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -444,5 +489,23 @@ body {
     }
     .nav-text {
         margin-left: 0;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .nav-item {
+        margin-bottom: 0;
+    }
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .swiper-slide {
+        margin-bottom: 50px;
+    }
+    .video-thumb {
+        height: 250px;
+    }
+    .slider-buttons {
+        display: none;
     }
 }

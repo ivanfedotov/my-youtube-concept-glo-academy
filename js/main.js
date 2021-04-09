@@ -79,3 +79,18 @@ const swiper1 = new Swiper('.channel-slider', {
     },
   
   });
+
+  const searchBtn = document.querySelector('.mobile-search');
+  const mobileSearch = document.querySelector('.input-group');
+  searchBtn.addEventListener('click', () => {
+    mobileSearch.classList.add('is-open');
+  });
+  document.querySelector('.content').addEventListener('click', () => {
+    mobileSearch.classList.remove('is-open');
+  });
+
+  if (document.documentElement.scrollWidth <= 640) {
+    swiper1.destroy();
+    swiper2.destroy();
+    swiper3.destroy();
+  }
