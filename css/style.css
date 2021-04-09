@@ -36,7 +36,6 @@ body {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    min-width: 1024px;
     position: fixed;
     top: 0;
     left: 0;
@@ -77,11 +76,11 @@ body {
     background: #EBEBEB;
     border-radius: 22px;
     border-radius: 22px;
+    margin-right: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 17px;
-    max-width: 830px;
     width: 43.23%;
 }
 .input-search {
@@ -394,4 +393,56 @@ body {
 .icon-slider-button-left:hover, .icon-slider-button-right:hover {
     background-color: #ff0000;
     border-radius: 50%;
+}
+
+/* Адаптивность */
+.mobile-sidebar {
+    display: none;
+}
+@media (max-width: 1024px) {
+    .icons {
+        display: none;
+    }
+    .user {
+        margin-left: auto;
+    }
+}
+@media (max-width: 720px) {
+    .menu-button {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .content {
+        padding-left: 32px;
+    }
+    .mobile-sidebar {
+        display: block;
+        position: fixed;
+        z-index: 99px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    .mobile-sidebar .nav-link {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-sidebar .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0;
+        padding-top: 13px;
+        padding-bottom: 11px;
+        border-top: 1px solid #f1f1f1;
+    }
+    .mobile-sidebar .nav-item {
+        margin-bottom: 0;
+    }
+    .nav-text {
+        margin-left: 0;
+    }
 }
