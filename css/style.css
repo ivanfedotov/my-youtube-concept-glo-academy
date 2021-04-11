@@ -312,6 +312,7 @@ body {
 }
 .video-counter {
     display: flex;
+    flex-wrap: wrap;
 }
 .video-views {
     margin-right: 5px;
