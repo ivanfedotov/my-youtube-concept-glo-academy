@@ -16,7 +16,7 @@ const swiper1 = new Swiper('.channel-slider', {
       1100: {
         slidesPerView: 3,
       },
-      1800: {
+      720: {
         slidesPerView: 2,
       }
     },
@@ -68,7 +68,7 @@ const swiper1 = new Swiper('.channel-slider', {
       1100: {
         slidesPerView: 3,
       },
-      1800: {
+      720: {
         slidesPerView: 2,
       }
     },
@@ -89,7 +89,7 @@ const swiper1 = new Swiper('.channel-slider', {
     mobileSearch.classList.remove('is-open');
   });
 
-  if (document.documentElement.scrollWidth <= 640) {
+  if (document.documentElement.scrollWidth <= 720) {
     swiper1.destroy();
     swiper2.destroy();
     swiper3.destroy();
